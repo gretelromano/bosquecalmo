@@ -1,0 +1,7 @@
+@use "../variables/colores" as *;
+@use "../variables/mezclas" as *;
+
+
+.btn{ @extend %boton-base; }
+.btn-marca{ background:tono(marca); color:tono(blanco); &:hover{ background:tono(primario-oscuro); transform: translateY(-2px); } }
+.btn-marca-contorno{ border:2px solid color(marca); color:tono(marca); background:transparent; &:hover{ background:tono(marca); color:tono(blanco); } }

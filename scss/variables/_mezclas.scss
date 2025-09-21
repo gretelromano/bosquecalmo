@@ -1,0 +1,13 @@
+@use "colores" as *;
+
+$radio: 1rem !default;
+
+
+@mixin desde($p){ @media (min-width: map-get($puntos,$p)){ @content; } }
+@mixin hasta($p){ @media (max-width: map-get($puntos,$p)){ @content; } }
+
+%boton-base{ display:inline-flex; align-items:center; justify-content:center; border-radius:$radio; padding:.75rem 1rem; font-weight:600; transition: transform .2s ease, background-color .2s ease, color .2s ease; }
+
+@mixin sombra-suave{ box-shadow:$sombra; }
+
+@mixin tipo-fluido($min,$max){ font-size: clamp($min, calc(#{$min} + 1vw), $max); }

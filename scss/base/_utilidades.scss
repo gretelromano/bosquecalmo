@@ -1,0 +1,14 @@
+@use "../variables/colores" as *;
+
+.bg-marca-suave{ background: tono(marca-suave); }
+.enlace-saltar{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+.enlace-saltar:focus{ position:static; width:auto; height:auto; padding:.5rem 1rem; background:tono(marca); color:tono(blanco); border-radius:.5rem; }
+
+
+// Generación dinámica de espaciados
+$espacios:(0:0,1:.25rem,2:.5rem,3:1rem,4:1.5rem,5:2rem);
+@each $k,$v in $espacios{
+.m-#{$k}{ margin:$v !important; }
+.p-#{$k}{ padding:$v !important; }
+
+}

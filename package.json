@@ -1,0 +1,8 @@
+{
+"private": true,
+"scripts": {
+"sass": "sass --watch scss/principales.scss assets/css/estilos.css --style=expanded",
+"sass:build": "sass scss/principales.scss assets/css/estilos.css --no-source-map --style=compressed"
+},
+"devDependencies": { "sass": "^1.77.0" }
+}

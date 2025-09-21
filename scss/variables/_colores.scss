@@ -1,0 +1,16 @@
+$colores: (
+  primario: #6b8e23,
+  primario-oscuro: #4d6b18,
+  marca: #6b8e23,
+  marca-suave: #eef4e0,
+  acento: #c6d17a,
+  neutro-900: #1f1f1f,
+  neutro-700: #444,
+  neutro-500: #6c757d,
+  neutro-200: #e9ecef,
+  blanco: #fff
+);
+
+@function tono($nombre) {
+  @return map-get($colores, $nombre);
+}

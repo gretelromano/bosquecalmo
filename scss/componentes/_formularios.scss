@@ -1,0 +1,5 @@
+@use "../variables/colores" as *;
+
+
+input,textarea,select{ border:1px solid tono(neutro-200); border-radius:.75rem; padding:.75rem; width:100%; }
+input:focus,textarea:focus,select:focus{ outline:none; border-color:tono(marca); box-shadow:0 0 0 .25rem rgba(107,142,35,.15); }

@@ -1,0 +1,48 @@
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:#fff;
+  color:#1f1f1f;
+  font-family:"Archivo",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  line-height:1.6
+}
+img{max-width:100%;height:auto;display:block}
+.objeto-cubrir{object-fit:cover}
+
+/* === Utilidades === */
+.bg-marca-suave{background:#eef4e0}
+.borde-inferior{border-bottom:1px solid #e9ecef}
+.borde-superior{border-top:1px solid #e9ecef}
+.enlace-saltar{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.enlace-saltar:focus{
+  position:static;width:auto;height:auto;padding:.5rem 1rem;background:#6b8e23;color:#fff;border-radius:.5rem
+}
+
+/* === Encabezado === */
+.navbar{backdrop-filter:saturate(180%) blur(6px)}
+.navbar-toggler{border-color:rgba(0,0,0,.15)}
+.navbar-toggler-icon{filter:invert(35%);opacity:.8}
+.logo-img{max-width:180px;height:auto}
+@media (min-width:992px){.logo-img{max-width:220px}}
+
+/* === Botones marca === */
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:1rem;padding:.75rem 1rem;font-weight:600;transition:transform .2s ease,background-color .2s ease,color .2s ease}
+.btn-marca{background:#6b8e23;color:#fff}
+.btn-marca:hover{background:#4d6b18;transform:translateY(-2px)}
+.btn-marca-contorno{border:2px solid #6b8e23;color:#6b8e23;background:transparent}
+.btn-marca-contorno:hover{background:#6b8e23;color:#fff}
+
+/* === Tarjetas / sombras === */
+.sombra-suave{box-shadow:0 10px 20px rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease}
+.sombra-suave:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(0,0,0,.08)}
+
+/* === Animaciones === */
+@keyframes aparecer{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.animar-aparecer{animation:aparecer .6s ease both}
+
+/* === Texto === */
+.texto-secundario{color:#6c757d !important}
+
+/* === Secciones === */
+.seccion-hero .container{animation:aparecer .6s ease both}

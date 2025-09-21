@@ -1,0 +1,15 @@
+@use "../variables/colores" as *;
+
+*,*::before,*::after{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  background: tono(blanco);
+  color: tono(neutro-900);
+  font-family: $fuente-base;
+  line-height: 1.6;
+}
+img{ max-width:100%; height:auto; display:block; }
+.objeto-cubrir{ object-fit:cover; }
+.borde-inferior{ border-bottom:1px solid tono(neutro-200); }
+.borde-superior{ border-top:1px solid tono(neutro-200); }

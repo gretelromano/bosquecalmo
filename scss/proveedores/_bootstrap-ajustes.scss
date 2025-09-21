@@ -1,0 +1,4 @@
+@use "../variables/colores" as *;
+
+:root{ --bs-primary: #{tono(marca)}; }
+.nav-link.active{ color: var(--bs-primary) !important; font-weight: 600; }

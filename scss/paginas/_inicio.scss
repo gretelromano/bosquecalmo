@@ -1,0 +1,3 @@
+@keyframes aparecer{ from{ opacity:0; transform: translateY(10px);} to{ opacity:1; transform:none; } }
+.animar-aparecer{ animation: aparecer .6s ease both; }
+.seccion-hero .container{ animation: aparecer .6s ease both; }

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contacto — Bosque Calmo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/estilos.css" />
+</head>
+<body>
+<a class="visually-hidden-focusable enlace-saltar" href="#contenido">Saltar al contenido principal</a>
+<header class="borde-inferior">
+<nav class="navbar navbar-expand-lg bg-white" aria-label="Navegación principal">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+<img src="../assets/imagenes/logo-bosquecalmo.png" alt="Logo de Bosque Calmo" width="350" class="logo-img" />
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navPrincipal">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="../paginas/nosotros.html">Nosotros</a></li>
+<li class="nav-item"><a class="nav-link" href="../paginas/productos.html">Productos</a></li>
+<li class="nav-item"><a class="nav-link" href="../paginas/rituales.html">Rituales</a></li>
+<li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+
+<main id="contenido">
+<section class="py-5 bg-marca-suave borde-inferior">
+<div class="container">
+<h1 class="display-5 fw-bold mb-2">Contacto</h1>
+<p class="lead mb-0">Escribinos, estamos para ayudarte.</p>
+</div>
+</section>
+
+
+<section class="py-5">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-lg-7">
+<form class="row g-3" novalidate>
+<div class="col-12 col-md-6">
+<label for="nombre" class="form-label">Nombre</label>
+<input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required />
+</div>
+<div class="col-12 col-md-6">
+<label for="email" class="form-label">Email</label>
+<input type="email" id="email" class="form-control" placeholder="tu@mail.com" required />
+</div>
+<div class="col-12">
+<label for="mensaje" class="form-label">Mensaje</label>
+<textarea id="mensaje" class="form-control" rows="5" placeholder="¿En qué te ayudamos?" required></textarea>
+</div>
+<div class="col-12">
+<button type="submit" class="btn btn-marca">Enviar</button>
+</div>
+</form>
+</div>
+<div class="col-12 col-lg-5">
+<div class="card h-100 sombra-suave">
+<div class="card-body">
+<h2 class="h5">Información</h2>
+<ul class="list-unstyled mb-0">
+<li><strong>Instagram:</strong> <a href="https://instagram.com/bosque.calmo" target="_blank" rel="noopener">@bosque.calmo</a></li>
+<li><strong>Email:</strong> <a href="mailto:hola@bosquecalmo.com">bosquecalmo@gmail.com</a></li>
+<li><strong>Ubicación:</strong> Pilar, Buenos Aires</li> <img src="../assets/imagenes/mapabosque.jpeg" alt="Ubicacion del taller">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer class="py-4 borde-superior">
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+<small class="text-muted mb-0">© 2025 Bosque Calmo</small>
+<ul class="nav">
+<li class="nav-item"><a href="./nosotros.html" class="nav-link px-2">Nosotros</a></li>
+<li class="nav-item"><a href="./productos.html" class="nav-link px-2">Productos</a></li>
+<li class="nav-item"><a href="./rituales.html" class="nav-link px-2">Rituales</a></li>
+<li class="nav-item"><a href="./contacto.html" class="nav-link px-2">Contacto</a></li>
+</ul>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

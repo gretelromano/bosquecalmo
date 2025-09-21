@@ -1,0 +1,7 @@
+@use "../variables/colores" as *;
+
+
+.navbar{ backdrop-filter:saturate(180%) blur(6px); }
+.navbar-toggler{ border-color: rgba(0,0,0,.15); }
+.navbar-toggler-icon{ filter: invert(35%); opacity:.8; }
+.logo-img{ max-width: 180px; height:auto; @media (min-width: 992px){ max-width: 220px; } }

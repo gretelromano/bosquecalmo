@@ -1,0 +1,5 @@
+@use "../variables/colores" as *;
+
+h1,h2,h3{ line-height:1.15; }
+.display-5{ @include tipo-fluido(1.8rem,3rem); }
+.texto-secundario{ color: tono(neutro-500) !important; }
