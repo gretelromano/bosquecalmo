@@ -1,0 +1,4 @@
+node_modules/
+assets/css/*.map
+.vscode/
+.DS_Store
