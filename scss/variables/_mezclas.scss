@@ -2,6 +2,9 @@
 
 $radio: 1rem !default;
 
+@mixin tipo-fluido($min, $max) {
+  font-size: clamp($min, 2vw, $max);
+}
 
 @mixin desde($p){ @media (min-width: map-get($puntos,$p)){ @content; } }
 @mixin hasta($p){ @media (max-width: map-get($puntos,$p)){ @content; } }
@@ -11,3 +14,6 @@ $radio: 1rem !default;
 @mixin sombra-suave{ box-shadow:$sombra; }
 
 @mixin tipo-fluido($min,$max){ font-size: clamp($min, calc(#{$min} + 1vw), $max); }
+@mixin sombra-suave($sombra: 0 10px 20px rgba(0,0,0,.08)) {
+  box-shadow: $sombra;
+}

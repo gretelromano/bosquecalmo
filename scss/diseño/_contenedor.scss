@@ -1,3 +1,4 @@
 @use "../variables/colores" as *;
-.container{ max-width:$ancho-contenedor; }
+.container{ max-width: 1200px;
+ }
 .seccion-hero .container{ padding-top: .5rem; padding-bottom: .5rem; }

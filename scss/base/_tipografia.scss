@@ -1,5 +1,23 @@
+@use "sass:map";
+@use "../variables/colores" as c;
+
 @use "../variables/colores" as *;
+@use "../variables/mezclas" as m;
+
 
 h1,h2,h3{ line-height:1.15; }
-.display-5{ @include tipo-fluido(1.8rem,3rem); }
-.texto-secundario{ color: tono(neutro-500) !important; }
+.display-5 {
+  @include m.tipo-fluido(1.8rem, 3rem);
+}
+
+.texto-secundario{ color: tono(neutro-500) !important; }$fuente-base: "Archivo", Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+body {
+  font-family: $fuente-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+color: map.get(c.$colores, "texto");
+
+}

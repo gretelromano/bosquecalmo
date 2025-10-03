@@ -1,7 +1,32 @@
 @use "../variables/colores" as *;
 @use "../variables/mezclas" as *;
+@use "../variables/colores" as c;
 
 
 .btn{ @extend %boton-base; }
-.btn-marca{ background:tono(marca); color:tono(blanco); &:hover{ background:tono(primario-oscuro); transform: translateY(-2px); } }
-.btn-marca-contorno{ border:2px solid color(marca); color:tono(marca); background:transparent; &:hover{ background:tono(marca); color:tono(blanco); } }
+.btn-marca-contorno {
+  border: 2px solid c.tono("marca");
+  color: c.tono("marca");
+  background: transparent;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+
+  &:hover,
+  &:focus {
+    background: c.tono("marca");
+    color: c.tono("blanco");
+    border-color: c.tono("marca-oscuro");
+  }
+}
+
+.btn-marca {
+  background: c.tono("marca");
+  color: c.tono("blanco");
+  border: 2px solid c.tono("marca");
+  transition: background-color .2s ease, border-color .2s ease;
+
+  &:hover,
+  &:focus {
+    background: c.tono("marca-oscuro");
+    border-color: c.tono("marca-oscuro");
+  }
+}

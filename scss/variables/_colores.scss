@@ -1,3 +1,17 @@
+@use "sass:map";
+
+$colores: (
+  "primario": #3b7f58,
+  "primario-oscuro": #2e6445,
+  "secundario": #9d8bb3,
+  "texto": #2b2b2b
+);
+
+@function tono($nombre) {
+  @return map.get($colores, $nombre);
+}
+
+
 $colores: (
   primario: #6b8e23,
   primario-oscuro: #4d6b18,
@@ -12,5 +26,5 @@ $colores: (
 );
 
 @function tono($nombre) {
-  @return map-get($colores, $nombre);
+@return map.get($colores, $nombre);
 }

@@ -1,8 +1,12 @@
 {
-"private": true,
-"scripts": {
-"sass": "sass --watch scss/principales.scss assets/css/estilos.css --style=expanded",
-"sass:build": "sass scss/principales.scss assets/css/estilos.css --no-source-map --style=compressed"
-},
-"devDependencies": { "sass": "^1.77.0" }
+  "name": "pre-entrega3romano",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sass:build": "sass scss/principales.scss assets/css/main.css --no-source-map --style=compressed",
+    "sass:watch": "sass --watch scss/principales.scss assets/css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
 }
